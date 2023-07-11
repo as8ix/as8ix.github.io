@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------links----------->
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon library ends -->
+
+
+    <link rel="stylesheet" href="/style.css">
+    <!--light-slider-css-->
+    <link rel="stylesheet" href="/lightslider.css">
+    <!--jQuery---------------->
+    <script src="/jQuery.js"></script>
+    <!--light-slider-js-->
+    <script src="/lightslider.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <!-------links-ends-------->
+    <title>Abdalla Shopping Website</title>
+    <!---------- site-icon ------------>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+</head>
+<body>  
+
+<nav> 
+        <!--social-links-and-phone-number----------------->
+ <div class="social-call">
+     <!--social-links--->
+     <div class="social">
+         <a href="#"><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><i class="fab fa-twitter"></i></a>
+         <a href="#"><i class="fab fa-youtube"></i></a>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+     </div>
+     <!--phone-number------>
+     <div class="phone">
+         <span>Call: +966 509 76 2389</span>
+     </div>
+ </div>
+ <!--menu-bar----------------------------------------->
+ <div class="navigation">
+     <!--logo------------>
+     <a href="#" class="logo">
+         <img src="/images/logo.png">
+    </a>
+    <!--menu-icon--------------------------->
+    <div class="toggle">
+
+    </div>
+
+
+           <!-----menu------>
+           <ul class="menu">
+               <li><a href="/index.html">Home</a></li>
+
+               <li><a href="#">Men</a></li>
+
+               <li><a href="#">Women</a></li>
+               <li><a href="#">Kids</a></li>
+               <li><a href="#">More ...</a>
+                <!--sale-lable-->
+                <span class="sale-lable">Sale</span></li>
+           </ul>
+           <!--right-menu-->
+           <div class="input-box">
+            <i class="uil uil-search"></i>
+            <input type="text" placeholder="Search here..." />
+            <button class="button">Search</button>
+          </div>
+           <div class="right-menu">
+               
+                <!---user-->
+               <a href="#" class="user">
+                   <i class="fas fa-user"></i>
+               </a>
+                <!---cart-icon-->
+               <a href="#">
+                   <i class="fas fa-shopping-cart">
+                   <!--number-of-products-in-cart-->
+                   <span class="num-cart-product">0</span>
+                </i>
+               </a>
+
+           </div>
+        </div>
+
+
+</nav>
+
+    <!----login-and-sing-up-form------------------------>
+    <div class="form">
+        <!--login------------------------>
+        <div class="login-form">
+            <!--cancel-btn----------->
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <!--heading-->
+            <strong>Log In</strong>
+            <!--input-->
+            <form >
+
+                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <!--submit-btn-->
+                <input type="submit" value="Log In">
+
+            </form>
+            <!--forget-and-sign-up-btn----->
+            <div class="form-btns">
+            <a href="#" class="forget">Forget Your Password?</a>
+            <a href="#" class="sign-up-btn">Create Account</a>
+            </div>   
+
+        </div>
+
+
+          <!--sign-up----------------------->
+          <div class="sign-up-form">
+            <!--cancel-btn----------->
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <!--heading-->
+            <strong>Sign Up</strong>
+            <!--input-->
+            <form >
+                <input type="text" placeholder="Full Name" name="full name" required>
+                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <!--submit-btn-->
+                <input type="submit" value="Sign Up">
+
+            </form>
+            <!--forget-and-sign-up-btn----->
+            <div class="form-btns">
+            <a href="#" class="already-acount">Already Have Account?</a>
+            
+            </div>   
+
+        </div>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+    /*--login-sign-up-form-----------------------*/
+        $(document).on('click','.user,.already-acount',function(){
+            $('.form').addClass('login-active').removeClass('sign-up-active')
+        }); 
+   
+        $(document).on('click','.sign-up-btn',function(){
+            $('.form').addClass('sign-up-active').removeClass('login-active')
+        }); 
+   
+   
+   
+   
+   
+        $(document).on('click','.form-cancel',function(){
+            $('.form').removeClass('login-active').removeClass('sign-up-active')
+        }); </script>
+</body>
+</html>
