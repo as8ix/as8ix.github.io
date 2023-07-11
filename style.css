@@ -74,7 +74,6 @@ nav {
 }
 .menu a:hover,
 .right-menu a:hover,
-.search-cancel a:hover,
 .form-cancel:hover {
 	color: #16a085;
 	transition: all ease 0.3s;
@@ -106,6 +105,70 @@ nav {
 	left: 10%;
 	top: 100%;
 }
+/*search input*/
+.input-box {
+	position: relative;
+	height: 49px;
+	max-width: 900px;
+	width: 30%;
+	background: #fff;
+	margin: 0;
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .input-box i,
+  .input-box .button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+  }
+  .input-box i {
+	font-size: 30px;
+	color: #707070;
+  }
+  .input-box input {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	font-size: 18px;
+	font-weight: 400;
+	border: none;
+	padding: 0 155px 0 25px;
+	background-color: transparent;
+  }
+  .input-box .button {
+	right: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	border: none;
+	padding: 12px 30px;
+	border-radius: 6px;
+	background-color: #0b9d8a;
+	cursor: pointer;
+  }
+  .input-box .button:active {
+	transform: translateY(-50%) scale(0.98);
+  }
+  /* Responsive */
+  @media screen and (max-width: 500px) {
+	.input-box {
+	  height: 66px;
+	  margin: 0 8px;
+	}
+	.input-box i {
+	  left: 12px;
+	  font-size: 25px;
+	}
+	.input-box input {
+	  padding: 0 112px 0 50px;
+	}
+	.input-box .button {
+	  right: 12px;
+	  font-size: 14px;
+	  padding: 8px 18px;
+	}
+  }
 .fa-shopping-cart {
 	position: relative;
 }
@@ -123,56 +186,6 @@ nav {
 	justify-content: center;
 	align-items: center;
 	font-weight: 400;
-}
-.search-bar {
-	width: 100%;
-	height: 300px;
-	background-color: #ffffff;
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	display: flex;
-	justify-content: center;
-	box-shadow: 2px -5px 30px rgba(0, 0, 0, 0.1);
-	z-index: 101;
-	animation: search 0.3s;
-}
-.search-input {
-	width: 90%;
-	border-bottom: 2px solid #555555;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100px;
-	margin-top: 20px;
-}
-.search-bar input {
-	width: 100%;
-	padding: 30px;
-	border: none;
-	outline: none;
-	font-size: 2rem;
-	margin: 20px;
-	padding: 0px 20px;
-}
-.search-cancel {
-	color: #272727;
-	font-size: 2rem;
-	padding-right: 40px;
-}
-.search-bar {
-	display: none;
-}
-.search-bar-active {
-	display: flex;
-}
-@keyframes search {
-	0% {
-		bottom: -300px;
-	}
-	100% {
-		bottom: 0px;
-	}
 }
 .form {
 	width: 100%;
@@ -613,6 +626,7 @@ footer {
 .toggle {
 	display: none;
 }
+
 @media (max-width: 1010px) {
 	nav {
 		position: relative;
@@ -685,17 +699,11 @@ footer {
 		font-size: 2rem;
 		line-height: 40px;
 	}
-	.search-input {
-		height: 60px;
-	}
-	.search-input input,
-	.search-cancel {
-		font-size: 1.4rem;
-	}
 	.sale-box {
 		height: 200px;
 	}
 }
+
 @media (max-width: 600px) {
 	.navigation {
 		padding: 10px;
