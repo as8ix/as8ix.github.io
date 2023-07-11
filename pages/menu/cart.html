@@ -21,9 +21,9 @@
 
 
     <!-------links-ends-------->
-    <title>Abdalla Shopping Website</title>
+    <title>Your Shopping cart -  - as8ix Shopping Website</title>
     <!---------- site-icon ------------>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
 </head>
 <body>  
@@ -54,7 +54,6 @@
 
     </div>
 
-
            <!-----menu------>
            <ul class="menu">
                <li><a href="/index.html">Home</a></li>
@@ -76,11 +75,11 @@
            <div class="right-menu">
                
                 <!---user-->
-               <a href="#" class="user">
+               <a href="user.html" class="user">
                    <i class="fas fa-user"></i>
                </a>
                 <!---cart-icon-->
-               <a href="#">
+               <a href="cart.html">
                    <i class="fas fa-shopping-cart">
                    <!--number-of-products-in-cart-->
                    <span class="num-cart-product">0</span>
@@ -89,8 +88,6 @@
 
            </div>
         </div>
-
-
 </nav>
 
     <!----login-and-sing-up-form------------------------>
@@ -151,23 +148,46 @@
 
     </div>
 
+    <!--services--------------------->
+    <section class="services">
+        <!--services-box-1------------------->
+            <div class="services-box">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Free Shipping</span>
+                <p>Free Shipping For All KSA Orders</p>
+            </div>
+        <!--services-box-2------------------->
+             <div class="services-box">
+                <i class="fas fa-headphones-alt"></i>
+                <span>Support 24/7</span>
+                <p>We Support 24h A Day</p>
+            </div>
+        <!--services-box-3------------------->
+             <div class="services-box">
+                <i class="fas fa-sync"></i>
+                <span>100% Money Back</span>
+                <p>You Have 30 Days To Return</p>
+            </div>
 
-    <script type="text/javascript">
-    /*--login-sign-up-form-----------------------*/
-        $(document).on('click','.user,.already-acount',function(){
-            $('.form').addClass('login-active').removeClass('sign-up-active')
-        }); 
-   
-        $(document).on('click','.sign-up-btn',function(){
-            $('.form').addClass('sign-up-active').removeClass('login-active')
-        }); 
-   
-   
-   
-   
-   
-        $(document).on('click','.form-cancel',function(){
-            $('.form').removeClass('login-active').removeClass('sign-up-active')
-        }); </script>
+    </section>
+
+<!--footer--------------------------------->
+    <footer>
+        <!--copyright----------------------->
+        <span class="copyright">
+            Copyright 2021 - Abdalla.com
+        </span>
+        
+       <!--subscribe-----
+<div class="subscribe">
+            <form >
+                <input type="email" placeholder="Example@gmail.com" required/>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>-->
+        
+    </footer>
+
+    <script src="/app.js"></script>
 </body>
 </html>
