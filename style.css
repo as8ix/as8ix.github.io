@@ -311,6 +311,7 @@ nav {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	border-radius: 2.5px
 }
 .f-slide-1 {
 	background-image: url(../images/nothingImg.png);
