@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------links----------->
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon library ends -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="../../style.css">
+    <!--light-slider-css-->
+    <link rel="stylesheet" href="../../lightslider.css">
+    <!--jQuery---------------->
+    <script src="../../jQuery.js"></script>
+    <!--light-slider-js-->
+    <script src="../../lightslider.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <!-------links-ends-------->
+    <title>Your Shopping cart -  - as8ix Shopping Website</title>
+    <!---------- site-icon ------------>
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+</head>
+<body>  
+
+<nav> 
+        <!--social-links-and-phone-number----------------->
+ <div class="social-call">
+     <!--social-links--->
+     <div class="social">
+         <a href="#"><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><i class="fab fa-twitter"></i></a>
+         <a href="#"><i class="fab fa-youtube"></i></a>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+     </div>
+     <!--phone-number------>
+     <div class="phone">
+         <span>Call: +966 509 76 2389</span>
+     </div>
+ </div>
+ <!--menu-bar----------------------------------------->
+ <div class="navigation">
+     <!--logo------------>
+     <a href="#" class="logo">
+         <img src="/images/logo.png">
+    </a>
+    <!--menu-icon--------------------------->
+    <div class="toggle">
+
+    </div>
+
+           <!-----menu------>
+           <ul class="menu">
+               <li><a href="/index.html">Home</a></li>
+
+               <li><a href="#">Men</a></li>
+
+               <li><a href="#">Women</a></li>
+               <li><a href="#">Kids</a></li>
+               <li><a href="#">More ...</a>
+                <!--sale-lable-->
+                <span class="sale-lable">Sale</span></li>
+           </ul>
+           <!--right-menu-->
+           <div class="input-box">
+            <i class="uil uil-search"></i>
+            <input type="text" placeholder="Search here..." />
+            <button class="button">Search</button>
+          </div>
+           <div class="right-menu">
+               
+                <!---user-->
+               <a href="user.html" class="user">
+                   <i class="fas fa-user"></i>
+               </a>
+                <!---cart-icon-->
+               <a href="cart.html">
+                   <i class="fas fa-shopping-cart">
+                   <!--number-of-products-in-cart-->
+                   <span class="num-cart-product">0</span>
+                </i>
+               </a>
+
+           </div>
+        </div>
+</nav>
+
+<!----login-and-sing-up-form------------------------>
+<div class="form">
+    <!--login------------------------>
+    <div class="login-form">
+        <!--cancel-btn----------->
+        <a href="#" class="form-cancel">
+            <i class="fas fa-times"></i>
+        </a>
+
+        <!--heading-->
+        <strong>Log In</strong>
+        <!--input-->
+        <form >
+
+            <input type="email" placeholder="Example@gmail.com" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <!--submit-btn-->
+            <input type="submit" value="Log In">
+
+        </form>
+        <!--forget-and-sign-up-btn----->
+        <div class="form-btns">
+        <a href="#" class="forget">Forget Your Password?</a>
+        <a href="#" class="sign-up-btn">Create Account</a>
+        </div>   
+
+    </div>
+
+
+        <!--sign-up----------------------->
+        <div class="sign-up-form">
+        <!--cancel-btn----------->
+        <a href="#" class="form-cancel">
+            <i class="fas fa-times"></i>
+        </a>
+
+        <!--heading-->
+        <strong>Sign Up</strong>
+        <!--input-->
+        <form >
+            <input type="text" placeholder="Full Name" name="full name" required>
+            <input type="email" placeholder="Example@gmail.com" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <!--submit-btn-->
+            <input type="submit" value="Sign Up">
+
+        </form>
+        <!--forget-and-sign-up-btn----->
+        <div class="form-btns">
+        <a href="#" class="already-acount">Already Have Account?</a>
+        
+        </div>   
+
+    </div>
+
+
+</div>
+<!--main-->
+<section class="sproduct my-3 pt-3 container">
+    <div class="row mt-3">
+        <div class="col-lg-5 col-md-12 col-12">
+            <img class="img-fluid w-100 pb-1" id="MainImg" src="/images/nothingImg1.png" alt="product">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="/images//nothingImg1.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="/images//nothingImg1.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="/images//nothingImg1.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="/images//nothingImg1.png" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+            <h6>Home / T-Shirt</h6>
+            <h3 class="py-4">Men's Fashion T Shirt</h3>
+            <h2>SAR#.##</h2>
+
+            <select class="my-3">
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>3XL</option>
+            </select>
+            <input type="number" value="1">
+
+            <button class="btn btn-primary buy-btn">Add To Cart</button>
+
+            <h4 class="mt-5 mb-5">Product Details</h4>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dolores aliquid hic error cupiditate! Quae nemo labore reiciendis accusamus veritatis architecto aperiam dolorem, pariatur enim. Impedit eaque voluptate illo recusandae!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas dolores aliquid hic error cupiditate! Quae nemo labore reiciendis accusamus veritatis architecto aperiam dolorem, pariatur enim. Impedit eaque voluptate illo recusandae!</span>
+        </div>
+    </div>
+</section>
+<br>
+<div class="arrival-heading">
+    <strong>Related Products</strong>
+    
+</div>
+
+<!--product-container-->
+<div class="product-container">
+
+    <!--product-box-1-->
+    <div class="product-box">
+
+        <!--img-->
+        <div class="product-img">
+            <!--add-cart--------->
+        <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+        
+          <img src="images/nothingImg1.png">
+       </div>
+
+       <!--details-->
+       <div class="product-details">
+            <a href="pages/product.html" class="p-name">Drawstring T-Shirt</a>
+            <span class="p-price">$22.00</span>
+       </div>
+
+    </div>
+    <!--product-box-2-->
+    <div class="product-box">
+
+        <!--img-->
+        <div class="product-img">
+            <!--add-cart--------->
+        <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+        
+          <img src="images/nothingImg1.png">
+       </div>
+
+       <!--details-->
+       <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-Shirt</a>
+            <span class="p-price">$22.00</span>
+       </div>
+
+    </div>
+    <!--product-box-3-->
+    <div class="product-box">
+
+        <!--img-->
+        <div class="product-img">
+            <!--add-cart--------->
+        <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+        
+          <img src="images/nothingImg1.png">
+       </div>
+
+       <!--details-->
+       <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-Shirt</a>
+            <span class="p-price">$22.00</span>
+       </div>
+
+    </div>
+    <!--product-box-4-->
+    <div class="product-box">
+
+        <!--img-->
+        <div class="product-img">
+            <!--add-cart--------->
+        <a href="#" class="add-cart">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+        
+          <img src="images/nothingImg1.png">
+       </div>
+
+       <!--details-->
+       <div class="product-details">
+            <a href="#" class="p-name">Drawstring T-Shirt</a>
+            <span class="p-price">$22.00</span>
+       </div>
+
+    </div>
+   
+<!--main-->
+
+    <section class="services">
+        <!--services-box-1------------------->
+            <div class="services-box">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Free Shipping</span>
+                <p>Free Shipping For All KSA Orders</p>
+            </div>
+        <!--services-box-2------------------->
+             <div class="services-box">
+                <i class="fas fa-headphones-alt"></i>
+                <span>Support 24/7</span>
+                <p>We Support 24h A Day</p>
+            </div>
+        <!--services-box-3------------------->
+             <div class="services-box">
+                <i class="fas fa-sync"></i>
+                <span>100% Money Back</span>
+                <p>You Have 30 Days To Return</p>
+            </div>
+
+    </section>
+
+<!--footer--------------------------------->
+    <footer>
+        <!--copyright----------------------->
+        <span class="copyright">
+            Copyright 2021 - Abdalla.com
+        </span>
+        
+       <!--subscribe-->
+<div class="subscribe">
+            <form >
+                <input type="email" placeholder="Example@gmail.com" required/>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+        
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+</html>
