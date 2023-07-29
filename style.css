@@ -17,7 +17,7 @@ a {
 nav {
 	width: 100%;
 	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.07);
-	z-index: 100;
+	/* z-index: 100; */
 }
 .social-call {
 	background-color: #303030;
