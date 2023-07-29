@@ -558,6 +558,7 @@ nav {
 	align-items: center;
 	flex-wrap: wrap;
 	margin: auto;
+	margin-top: 10%;
 }
 .services-box {
 	display: flex;
@@ -593,7 +594,7 @@ footer {
 	padding: 10px;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	flex-wrap: wrap;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 .copyright {
 	font-size: 0.9rem;
@@ -627,6 +628,106 @@ footer {
 .toggle {
 	display: none;
 }
+
+.card{
+	margin: 25px;
+	padding: 10px 30px;
+	background: transparent;
+}
+.card-header{
+	background: transparent;
+	color: #444444;
+	font-weight: 600;
+}
+.btn-primary{
+	background-color: #16a085;
+	border: 1px solid #fff;
+}
+.btn-primary:hover{
+	background-color: #0b9d8a;
+	border: 1px solid #fff;
+}
+.summery-container{
+	display: flex;
+	flex-direction: row;
+	font-weight: 600;
+}
+.orders{
+	width: 1100px;
+	height: 100%;
+}
+.summery{
+	width: 400px;
+	height: 420px;
+	background: transparent;
+	padding: 0%;
+	
+}
+.summery .card-header{
+	margin-bottom: 20px;
+}
+.summery input {
+	background-color: transparent;
+	margin-bottom: 10px;
+	color: #303030;
+	font-weight: 700;
+}
+.summery button{
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.coInkx{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 6px 0px;
+	color: #808080;
+	font-size: 14px;
+	padding: 0 15px;
+}
+.summery hr{
+	width: 100%;
+	color: #808080;
+}
+.coInkx h5{
+	color: #444444;
+	font-weight: 600;
+	
+}
+.totalPrice span{
+	font-size: 12px;
+	color: #808080;
+}
+.totalPrice .tp{
+	font-size: 18px;
+	color: #444444;
+	font-weight: 600;
+}
+.sbtogo{
+	margin: 20px;
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1010px) {
 	nav {
