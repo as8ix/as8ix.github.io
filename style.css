@@ -803,10 +803,27 @@ input:disabled{
     background-color:white;
 }
          
+.overview .container{
+	border-radius: 8px;
+	padding: 20px;
+	margin:  10%;
+
+}
+.overview hr, h3, h5{
+	width: 95%;
+	margin: 20px auto ;
+}
 
 
-
-
+.overview .content h5{
+	font-weight: 600;
+	font-size: 19px;
+}
+.overview .content span{
+	font-weight: 300;
+	font-size: 15px;
+	align-items: center;
+}
 
 
 
