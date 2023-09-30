@@ -620,7 +620,7 @@ footer {
 .fix-nav {
 	background-color: #303030;
 	width: 100%;
-	position: fixed;
+	/* position: fixed; */
 	top: 0px;
 	left: 0px;
 	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.07);
@@ -740,6 +740,69 @@ footer {
 	transition: 0.3s all;
 }
 
+.qty .count {
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 3px;
+	min-width: 35px;
+    text-align: center;
+}
+.qty .plus {
+	background: #a43333b6 !important;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 "poppins";
+    text-align: center;
+    border-radius: 50%;
+    }
+	
+.qty .minus {
+	background: #a43333b6 !important;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 "poppins";
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+}
+
+.minus:hover{
+    background-color: #16a085 !important;
+}
+.plus:hover{
+    background-color: #16a085 !important;
+}
+/*Prevent text selection*/
+span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+input{  
+    border: 0;
+    width: 2%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:disabled{
+    background-color:white;
+}
+         
 
 
 
