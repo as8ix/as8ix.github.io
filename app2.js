@@ -10,3 +10,8 @@ $(document).ready(function(){
             }
         });
  });
+
+ let table = document.getElementsByClassName("table")
+function show_hide(table) {
+    table.style.property = "none"
+}

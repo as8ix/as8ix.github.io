@@ -436,8 +436,8 @@ nav {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-top: 20px;
-	/*	margin: 40px;*/
+
+		margin: auto;
 }
 .product-box {
 	display: flex;
@@ -799,32 +799,33 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-input:disabled{
-    background-color:white;
-}
+
          
 .overview .container{
 	border-radius: 8px;
 	padding: 20px;
-	margin:  10%;
 
 }
-.overview hr, h3, h5{
+.overview hr, .overview h3, .overview h5, .overview span, .overview p, .overview li{
 	width: 95%;
-	margin: 20px auto ;
+	margin: 20px;
+	color: #4e4e4e;
 }
 
 
 .overview .content h5{
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 19px;
 }
 .overview .content span{
 	font-weight: 300;
 	font-size: 15px;
-	align-items: center;
-}
 
+}
+.table td{
+	border-radius: 20px;
+	padding: 10px 20px
+}
 
 
 
