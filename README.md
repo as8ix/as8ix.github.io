@@ -1,1 +1,1 @@
-# as8ix.github.stoore.io
+# https://as8ix.github.io/oldHtmlEcommerce/
